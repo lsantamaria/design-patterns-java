@@ -1,7 +1,5 @@
 package com.lsantamaria.designpatterns.structural.adapter;
 
-import static org.mockito.Mockito.mock;
-
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -15,7 +13,7 @@ public class FlyingDeviceAdapterTest {
     FlyingVehicle helicopter = new Helicopter();
     helicopter.takeOff();
 
-    Drone drone = mock(Drone.class);
+    Drone drone = Mockito.mock(Drone.class);
     FlyingDeviceAdapter flyingDeviceAdapter = new FlyingDeviceAdapter(drone);
     flyingDeviceAdapter.takeOff();
 

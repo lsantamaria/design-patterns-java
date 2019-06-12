@@ -1,5 +1,5 @@
 package com.lsantamaria.designpatterns.structural.adapter;
 
-interface FlyingVehicle{
-  void takeOff();
+public abstract class FlyingVehicle{
+  public abstract void takeOff();
 }

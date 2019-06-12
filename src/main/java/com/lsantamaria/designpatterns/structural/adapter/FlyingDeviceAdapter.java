@@ -1,6 +1,6 @@
 package com.lsantamaria.designpatterns.structural.adapter;
 
-class FlyingDeviceAdapter implements FlyingVehicle {
+class FlyingDeviceAdapter extends FlyingVehicle {
 
   private FlyingDevice flyingDevice;
 

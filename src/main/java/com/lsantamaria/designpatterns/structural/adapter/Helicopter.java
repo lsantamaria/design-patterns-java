@@ -1,6 +1,6 @@
 package com.lsantamaria.designpatterns.structural.adapter;
 
-class Helicopter implements FlyingVehicle{
+class Helicopter extends FlyingVehicle{
 
   @Override
   public void takeOff() {
