@@ -1,4 +1,4 @@
-package com.lsantamaria.designpatterns.behavioural.visitor.carcomponents;
+package com.lsantamaria.designpatterns.behavioral.visitor.carcomponents;
 
 import java.util.ArrayList;
 import java.util.List;

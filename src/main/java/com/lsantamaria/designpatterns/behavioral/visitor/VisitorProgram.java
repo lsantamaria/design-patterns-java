@@ -1,10 +1,10 @@
-package com.lsantamaria.designpatterns.behavioural.visitor;
+package com.lsantamaria.designpatterns.behavioral.visitor;
 
-import com.lsantamaria.designpatterns.behavioural.visitor.carcomponents.Engine;
-import com.lsantamaria.designpatterns.behavioural.visitor.carcomponents.Vehicle;
-import com.lsantamaria.designpatterns.behavioural.visitor.carcomponents.VehicleComponent;
-import com.lsantamaria.designpatterns.behavioural.visitor.carcomponents.Wheels;
-import com.lsantamaria.designpatterns.behavioural.visitor.carcomponents.Window;
+import com.lsantamaria.designpatterns.behavioral.visitor.carcomponents.Engine;
+import com.lsantamaria.designpatterns.behavioral.visitor.carcomponents.Vehicle;
+import com.lsantamaria.designpatterns.behavioral.visitor.carcomponents.VehicleComponent;
+import com.lsantamaria.designpatterns.behavioral.visitor.carcomponents.Wheels;
+import com.lsantamaria.designpatterns.behavioral.visitor.carcomponents.Window;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

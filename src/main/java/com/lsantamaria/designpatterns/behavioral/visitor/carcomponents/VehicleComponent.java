@@ -1,6 +1,6 @@
-package com.lsantamaria.designpatterns.behavioural.visitor.carcomponents;
+package com.lsantamaria.designpatterns.behavioral.visitor.carcomponents;
 
-import com.lsantamaria.designpatterns.behavioural.visitor.MOTVisitor;
+import com.lsantamaria.designpatterns.behavioral.visitor.MOTVisitor;
 
 public interface VehicleComponent {
 
