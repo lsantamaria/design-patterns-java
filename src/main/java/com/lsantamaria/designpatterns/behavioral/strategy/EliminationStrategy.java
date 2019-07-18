@@ -1,7 +1,5 @@
 package com.lsantamaria.designpatterns.behavioral.strategy;
 
-import java.util.AbstractMap.SimpleEntry;
-import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,8 +7,8 @@ public class EliminationStrategy extends EquationSystemStrategy {
   Logger logger = LoggerFactory.getLogger(this.getClass());
 
   @Override
-  public Map.Entry<Integer, Integer> solveEquation(EquationSystem equationSystem) {
-    logger.info("Solving equation System by Elimination....");
-    return new SimpleEntry<>(3, -2);
+  public EquationResult solveEquation(EquationSystem equationSystem) {
+    logger.info("Solving equation System by elimination strategy....");
+    return new EquationResult();
   }
 }

@@ -1,19 +1,23 @@
 package com.lsantamaria.designpatterns.behavioral.strategy;
 
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
 /**
- * Strategy pattern pretend to encapsulate different algorithms for performing a concrete operation
- * so they can be selected separately at runtime.
+ * Strategy pattern pretend to encapsulate each algorithm of a family so that they can be
+ * interchanged at runtime.
  *
  * In this example we will use this pattern to solve equations systems. The user will select the
- * algorithm to be used so the corresponding strategy object will be applied to the equation
- * solving. Although in this case the result is the same because the three methods do the same
- * function, it could be used for different algorithms that not get the same result.
+ * algorithm to be used so the corresponding strategy object will be used for solving the equation.
+ * Although in this case the result is the same, it could be used for algorithms that produce
+ * different results.
  *
- * We can find an example of strategy in the Java package
+ * We can find an example of strategy in the {@link java.util.Collections#sort(List, Comparator)}
+ * method, in which we decide at runtime which strategy to use for comparing the elements of the
+ * list.
  */
 public class StrategyProgram {
 
@@ -32,7 +36,7 @@ public class StrategyProgram {
     while (true) {
       Scanner scanner = new Scanner(System.in);
       System.out.println(
-                "=====================\n "
+          "=====================\n "
               + "How do you want to solve the equation? "
               + "\n - 1:Graph "
               + "\n - 2:Substitution "
@@ -42,11 +46,10 @@ public class StrategyProgram {
       EquationSystemStrategy selectedStrategy = strategies.get(strategy);
       EquationSystemSolver equationSystemSolver = new EquationSystemSolver(selectedStrategy);
 
-      Map.Entry<Integer, Integer> result = equationSystemSolver.solveSystem(equationSystem);
+      EquationResult result = equationSystemSolver.solveSystem(equationSystem);
 
       System.out
-          .println("Equation result: x = " + result.getKey() + ", y=" + result.getValue() + "\n\n");
+          .println("Equation result: x = " + result.getX() + ", y=" + result.getY() + "\n\n");
     }
   }
-
 }
