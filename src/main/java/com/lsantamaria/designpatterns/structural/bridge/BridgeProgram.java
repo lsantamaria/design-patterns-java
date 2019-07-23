@@ -14,7 +14,7 @@ package com.lsantamaria.designpatterns.structural.bridge;
  * abstraction. For instance, we could add a new kind of engine without modifying any of the
  * existing code nor recompiling it again.
  */
-public class CarProgram {
+public class BridgeProgram {
 
   public static void main(String... args) {
     Engine dieselEngine = new DieselEngine();

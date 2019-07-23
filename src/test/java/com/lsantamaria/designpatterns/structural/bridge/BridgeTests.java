@@ -3,7 +3,7 @@ package com.lsantamaria.designpatterns.structural.bridge;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-public class EngineBridgeTest {
+public class BridgeTests {
 
 
   @Test

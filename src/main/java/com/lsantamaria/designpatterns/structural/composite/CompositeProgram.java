@@ -17,7 +17,7 @@ import java.util.List;
  * This example shows how to render the HTML of both composite and individual elements without
  * distinguish them.
  */
-public class FormsProgram {
+public class CompositeProgram {
 
   public static void main(String... args) {
     FormElement checkbox = new Checkbox("Are you married?", "true", "marriage");

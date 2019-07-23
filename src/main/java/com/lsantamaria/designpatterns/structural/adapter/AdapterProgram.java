@@ -12,7 +12,7 @@ package com.lsantamaria.designpatterns.structural.adapter;
  * an adapter object ({@link FlyingDeviceAdapter} that allows a flying device to take off by using
  * the {@link FlyingVehicle} abstraction.
  */
-public class FlyingProgram {
+public class AdapterProgram {
 
   public static void main(String[] args) {
 
