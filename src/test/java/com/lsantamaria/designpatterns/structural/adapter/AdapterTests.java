@@ -3,7 +3,7 @@ package com.lsantamaria.designpatterns.structural.adapter;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-public class FlyingDeviceAdapterTest {
+public class AdapterTests {
 
   @Test
   public void testAdapter(){
